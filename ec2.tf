@@ -44,7 +44,7 @@ resource "aws_security_group_rule" "all_egress" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-0bb09e28eeb9961b4"  # Replace with the desired AMI ID
+  ami           = "ami-05c13eab67c5d8861"  # Replace with the desired AMI ID
   instance_type = "t2.micro"  # Replace with the desired instance type
   security_groups = [aws_security_group.My_Monday_Task.name]
 }
