@@ -18,7 +18,12 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::600764632321:role/MyPipelineRole
+          
+          
       - name: Terraform Apply
         run: terraform apply -auto-approve
         env:
