@@ -24,8 +24,8 @@ jobs:
         env:
           TF_VAR_aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           TF_VAR_aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        working-directory: MyPipeline
+        working-directory: ./
 
       - name: Terraform Plan
         run: terraform plan
-        working-directory: MyPipeline
+        working-directory: ./
