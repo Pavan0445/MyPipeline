@@ -1,16 +1,9 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
+provider "aws" {
+  region = "us-west-2"
+  access_key = "AKIAUWTD2ERKAETKFI4P"
+  secret_key = "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"
 }
 
-# Configure the AWS Provider
-provider "aws" {
-  region = "us-east-1"
-}
 
 
 resource "aws_security_group" "My_Monday_Task" {
