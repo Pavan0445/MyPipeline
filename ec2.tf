@@ -48,3 +48,4 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"  # Replace with the desired instance type
   security_groups = [aws_security_group.My_Monday_Task.name]
 }
+
